@@ -1,0 +1,122 @@
+[
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "https://i.ibb.co.com/c54zZ7J/1696748634550-Shakib-Al-Hasan.jpg",
+    "playerCountry": "Bangladesh",
+    "playingRole": "All-Rounder",
+    "rating": 9.5,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Slow Left-arm Orthodox",
+    "price": "75 Lakh BDT"
+  },
+  {
+    "playerName": "Tamim Iqbal",
+    "playerImg": "https://i.ibb.co.com/s9FqZFJ5/Tamim-Iqbal.jpg",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Batsman",
+    "rating": 9.2,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": "70 Lakh BDT"
+  },
+  {
+    "playerName": "Andre Russell",
+    "playerImg": "https://i.ibb.co.com/Dfdp4sh8/1682598187417-Andre-Russell.jpg",
+    "playerCountry": "West Indies",
+    "playingRole": "All-Rounder",
+    "rating": 9.7,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Fast",
+    "price": "1.2 Crore BDT"
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerImg": "https://i.ibb.co.com/k6msyZFZ/1749462887318-babarazam.webp",
+    "playerCountry": "Pakistan",
+    "playingRole": "Batsman",
+    "rating": 9.6,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": "90 Lakh BDT"
+  },
+  {
+    "playerName": "Rashid Khan",
+    "playerImg": "https://i.ibb.co.com/v6fCxwwZ/Whats-App-Image-2024-01-27-at-02-45-38.webp",
+    "playerCountry": "Afghanistan",
+    "playingRole": "Bowler",
+    "rating": 9.8,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Legbreak",
+    "price": "1.5 Crore BDT"
+  },
+  {
+    "playerName": "Litton Das",
+    "playerImg": "https://i.ibb.co.com/mVNQzY6r/image-790-1762017765.webp",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Wicketkeeper Batsman",
+    "rating": 8.9,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": "60 Lakh BDT"
+  },
+  {
+    "playerName": "Faf du Plessis",
+    "playerImg": "https://i.ibb.co.com/JwMXz9Z6/faf-2-2025-12-49e20d029a300dbd8c03605b3aeec185-1200x675.avif",
+    "playerCountry": "South Africa",
+    "playingRole": "Batsman",
+    "rating": 9.1,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Legbreak",
+    "price": "85 Lakh BDT"
+  },
+  {
+    "playerName": "Mustafizur Rahman",
+    "playerImg": "https://i.ibb.co.com/K1bc4JY/383539.webp",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Bowler",
+    "rating": 9.0,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Left-arm Fast Medium",
+    "price": "65 Lakh BDT"
+  },
+  {
+    "playerName": "David Miller",
+    "playerImg": "https://i.ibb.co.com/fVmKp01f/gr08ps0c-david-miller-625x300-22-February-26.webp",
+    "playerCountry": "South Africa",
+    "playingRole": "Batsman",
+    "rating": 9.3,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": "95 Lakh BDT"
+  },
+  {
+    "playerName": "Wanindu Hasaranga",
+    "playerImg": "https://i.ibb.co.com/h1986jwp/1752065070619-Wanindu-Hasaranga.jpg",
+    "playerCountry": "Sri Lanka",
+    "playingRole": "All-Rounder",
+    "rating": 9.4,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Legbreak",
+    "price": "1 Crore BDT"
+  },
+  {
+    "playerName": "Mohammad Rizwan",
+    "playerImg": "https://i.ibb.co.com/23kRbxbJ/333701.jpg",
+    "playerCountry": "Pakistan",
+    "playingRole": "Wicketkeeper Batsman",
+    "rating": 9.5,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Medium",
+    "price": "88 Lakh BDT"
+  },
+  {
+    "playerName": "Sunil Narine",
+    "playerImg": "https://i.ibb.co.com/cK96LwZT/244627-3.webp",
+    "playerCountry": "West Indies",
+    "playingRole": "All-Rounder",
+    "rating": 9.2,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": "92 Lakh BDT"
+  }
+]
