@@ -12,13 +12,16 @@ const fetchPlayers = async () => {
   return res.json();
 };
 
+const playersPromise = fetchPlayers();
+
 function App() {
   const [Toggle, setToggle] = useState(true);
 
-  const playersPromise = fetchPlayers();
+  const [availableBalance, setAvailableBalance] = useState(600000000);
+
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar availableBalance={availableBalance}></Navbar>
       <CommonNavPlayers setToggle={setToggle}></CommonNavPlayers>
 
       {Toggle === true ? (
@@ -27,7 +30,10 @@ function App() {
             <span className="loading loading-spinner text-error"></span>
           }
         >
-          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+          <AvailablePlayers
+            playersPromise={playersPromise}
+            setAvailableBalance={setAvailableBalance}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
         <SelectedPlayers></SelectedPlayers>
