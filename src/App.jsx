@@ -1,9 +1,10 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
+import CommonNavPlayers from "./components/CommonNavPlayers/CommonNavPlayers";
 
 // loaded players data
 const fetchPlayers = async () => {
@@ -12,16 +13,25 @@ const fetchPlayers = async () => {
 };
 
 function App() {
+  const [Toggle, setToggle] = useState(true);
+
   const playersPromise = fetchPlayers();
   return (
     <>
       <Navbar></Navbar>
-      <Suspense
-        fallback={<span className="loading loading-spinner text-error"></span>}
-      >
-        <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
-      </Suspense>
-      <SelectedPlayers></SelectedPlayers>
+      <CommonNavPlayers setToggle={setToggle}></CommonNavPlayers>
+
+      {Toggle === true ? (
+        <Suspense
+          fallback={
+            <span className="loading loading-spinner text-error"></span>
+          }
+        >
+          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+        </Suspense>
+      ) : (
+        <SelectedPlayers></SelectedPlayers>
+      )}
     </>
   );
 }
