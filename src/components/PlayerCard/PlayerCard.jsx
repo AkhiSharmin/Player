@@ -2,8 +2,18 @@ import React, { useState } from "react";
 import userImg from "../../assets/user.png";
 import flagImg from "../../assets/flag.png";
 
-const PlayerCard = ({ player, setAvailableBalance }) => {
+const PlayerCard = ({ player, availableBalance, setAvailableBalance }) => {
   const [isSelected, setSelected] = useState(false);
+
+  const handelSelectedData = (playerData) => {
+    const playerPrice = parseInt(playerData.price);
+    if (availableBalance < playerPrice) {
+      alert("Not enough Coin");
+      return;
+    }
+    setSelected(true);
+    setAvailableBalance(availableBalance - playerPrice);
+  };
 
   return (
     <div className="card bg-base-100 shadow-sm p-8 border-b-2">
@@ -44,8 +54,7 @@ const PlayerCard = ({ player, setAvailableBalance }) => {
           <button
             disabled={isSelected}
             onClick={() => {
-              setSelected(true);
-              setAvailableBalance(500);
+              handelSelectedData(player);
             }}
             className="btn"
           >
