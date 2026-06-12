@@ -17,12 +17,17 @@ const playersPromise = fetchPlayers();
 function App() {
   const [Toggle, setToggle] = useState(true);
 
-  const [availableBalance, setAvailableBalance] = useState(6000000);
+  const [availableBalance, setAvailableBalance] = useState(600000000);
+
+  const [purchasedPlayers, setPurchasedPlayers] = useState([]);
 
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
-      <CommonNavPlayers setToggle={setToggle}></CommonNavPlayers>
+      <CommonNavPlayers
+        Toggle={Toggle}
+        setToggle={setToggle}
+      ></CommonNavPlayers>
 
       {Toggle === true ? (
         <Suspense
@@ -31,13 +36,15 @@ function App() {
           }
         >
           <AvailablePlayers
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
             playersPromise={playersPromise}
             availableBalance={availableBalance}
             setAvailableBalance={setAvailableBalance}
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers purchasedPlayers={purchasedPlayers}></SelectedPlayers>
       )}
     </>
   );

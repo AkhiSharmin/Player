@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import userImg from "../../assets/user.png";
 import flagImg from "../../assets/flag.png";
 
-const PlayerCard = ({ player, availableBalance, setAvailableBalance }) => {
+const PlayerCard = ({
+  player,
+  availableBalance,
+  setAvailableBalance,
+  purchasedPlayers,
+  setPurchasedPlayers,
+}) => {
   const [isSelected, setSelected] = useState(false);
 
   const handelSelectedData = (playerData) => {
@@ -13,10 +19,11 @@ const PlayerCard = ({ player, availableBalance, setAvailableBalance }) => {
     }
     setSelected(true);
     setAvailableBalance(availableBalance - playerPrice);
+    setPurchasedPlayers(...purchasedPlayers, playerData);
   };
 
   return (
-    <div className="card bg-base-100 shadow-sm p-8 border-b-2">
+    <div className="card bg-slate-800 shadow-sm p-8 border-b-2">
       <figure>
         <img
           className="w-full h-[300px] object-cover"
@@ -56,7 +63,7 @@ const PlayerCard = ({ player, availableBalance, setAvailableBalance }) => {
             onClick={() => {
               handelSelectedData(player);
             }}
-            className="btn"
+            className="btn px-3 font-bold bg-[#111844]"
           >
             {isSelected === true ? "Selected" : "Choose Player"}
           </button>
