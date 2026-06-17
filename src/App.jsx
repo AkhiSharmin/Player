@@ -25,6 +25,7 @@ function App() {
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
       <CommonNavPlayers
+        purchasedPlayers={purchasedPlayers}
         Toggle={Toggle}
         setToggle={setToggle}
       ></CommonNavPlayers>

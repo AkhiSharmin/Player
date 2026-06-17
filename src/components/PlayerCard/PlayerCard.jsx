@@ -19,7 +19,7 @@ const PlayerCard = ({
     }
     setSelected(true);
     setAvailableBalance(availableBalance - playerPrice);
-    setPurchasedPlayers(...purchasedPlayers, playerData);
+    setPurchasedPlayers([...purchasedPlayers, playerData]);
   };
 
   return (
