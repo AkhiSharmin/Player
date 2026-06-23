@@ -21,6 +21,13 @@ function App() {
 
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
 
+  const removePlayer = (p) => {
+    const filterData = purchasedPlayers.filter(
+      (player) => player.playerName !== p.playerName
+    );
+    setPurchasedPlayers(filterData);
+  };
+
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
@@ -45,7 +52,10 @@ function App() {
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers purchasedPlayers={purchasedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          purchasedPlayers={purchasedPlayers}
+          removePlayer={removePlayer}
+        ></SelectedPlayers>
       )}
     </>
   );
